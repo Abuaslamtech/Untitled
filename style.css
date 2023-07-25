@@ -1,0 +1,291 @@
+
+@font-face {
+    font-family: 'League Spartan Variable';
+    src: url('LeagueSpartan-VF.woff2') format('woff2-variations');
+  }
+/* general */
+*{
+    font-family:'League Spartan Variable';
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+/* HEADERR */
+header{
+    background-color: #0E2A47;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+}
+header h2{
+    color: #DD4000;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* hero section */
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero{
+    width: 100%;
+    background-image: url(./assets/Sprinkle.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: #ffffff;
+    height: 90vh;
+}
+.hero h1{
+    font-size: 3rem;
+}
+.hero .con{
+    color:#DD4000 ;
+    font-size: 6.5rem;
+}
+.hero button{
+    background-color: #DD4000;
+    padding: 1.5rem;
+    width: 25%;
+    border-radius: 1.5rem;
+    color: #ffffff;
+}
+/* infos */
+.infos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7rem;
+}
+.info{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    color: #0E2A47;
+    font-size: 1.5rem;
+}
+.im{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+.info p{
+    font-size: 1.2rem;
+}
+.ic{
+    font-size:3rem;
+    color: #DD4000;
+}
+/* counter */
+.countdown{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   background-image: url(./assets/Hexagon.svg);
+   width: 100vw;
+   height: 40vh;
+   padding: 2rem;
+}
+.countdown h3{
+    font-size: 3rem;
+    color: #ffffff;
+}
+.counter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 90%;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    background-color: #DD4000;
+    color: #ffffff;
+    width: 25%;
+    /* /* height: 5rem; */
+    padding: 2rem;
+}
+/* about */
+.about, .speakers, .partners, .ticket{
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.description{
+    line-height: 2rem;
+}
+h2{
+    font-size: 2rem;
+}
+h2::first-letter{
+    border-top: 3px solid #DD4000;
+    padding-top: .5rem;
+}
+/* Ticket */
+.ticket{
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+}
+.ticinfo, .tickbtn{
+    width: 50%;
+}
+.ticinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.tickbtn{
+    margin: auto;
+    width: 30%;
+    height: 3rem;
+    padding: 1rem;
+    background-color: #DD4000;
+    color: #ffffff;
+    border-radius: 2rem;
+}
+/* footer */
+footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #0E2A47;
+    color: #ffffff;
+    padding: 2rem;
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.bio, .contact{
+    width: 50%;
+}
+.bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.bio p{
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+.soc{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+
+}
+.fa-brands{
+    font-size: 2rem;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contact h3{
+    font-size: 1.5rem;
+    width: 60%;
+}
+.contact input{
+    width: 60%;
+    padding: 1rem;
+    background-color: rgba(5, 77, 152, 0.2);
+}
+.contact button{
+    width: 60%;
+    border-radius: 1rem;
+    background-color: #DD4000;
+    color: #ffffff;
+    padding: 1rem;
+}
+.bottom_nav{
+    background-color: #080113;
+    width: 100vw;
+    padding: 2rem;
+    text-align: center;
+}
+/* mobile version */
+@media screen and (max-width: 600px) {
+    /* hero */
+    .hero h1{
+        font-size: 2rem;
+    }
+    .hero .con{
+        font-size: 4rem;
+    }
+    .hero button{
+        padding: 1rem 1.5rem;
+        width: 40%;
+        border-radius: 1rem;
+    }
+    /* infos */
+    .infos{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* countdown */
+    .countdown{
+        width: 100vw;
+        height: 50vh;
+    }
+    .countdown h3{
+        font-size: 2rem;
+    }
+    .counter{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .box{
+        width: 7rem;
+    }
+}
